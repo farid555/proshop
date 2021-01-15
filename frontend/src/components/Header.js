@@ -5,16 +5,18 @@ const Header = () => {
     return (
         <header>
             <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
-                <Navbar.Brand href="/">ProsShop</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home">Cart</Nav.Link>
-                        <Nav.Link href="#link">Sign In</Nav.Link>
+                <Container>
+                    <Navbar.Brand href="/">ProsShop</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ml-auto">
+                            <Nav.Link href="/cart"><i className='fas fa-shopping-cart'></i>Cart</Nav.Link>
+                            <Nav.Link href="/login"><i className='fas fa-user'></i>Sign In</Nav.Link>
 
-                    </Nav>
+                        </Nav>
 
-                </Navbar.Collapse>
+                    </Navbar.Collapse>
+                </Container>
             </Navbar>
         </header>
     )

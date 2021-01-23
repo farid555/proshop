@@ -10,16 +10,33 @@ const orderSchema = mongoose.Schema({
     },
 
     orderItems: [{
-        name: { type: String, required: true },
-        qty: { type: Number, required: true },
-        image: { type: String, required: true },
-        price: { type: String, required: true },
-        product: {
+        name:
+        {
+            type: String,
+            required: true
+        },
+        qty:
+        {
+            type: Number,
+            required: true
+        },
+        image:
+        {
+            type: String,
+            required: true
+        },
+        price:
+        {
+            type: Number,
+            required: true
+        },
+        product:
+        {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
-            ref: 'product'
+            ref: 'Product'
 
-        },
+        }
 
     }],
     shippingAddress: {
@@ -40,20 +57,22 @@ const orderSchema = mongoose.Schema({
 
     },
     taxPrice: {
-        type: String,
+        type: Number,
         required: true,
+        default: 0.0
     },
     shippingPrice: {
-        type: String,
+        type: Number,
         required: true,
+        default: 0.0
     },
     totalPrice: {
-        type: String,
+        type: Number,
         required: true,
         default: 0.0,
     },
     isPaid: {
-        type: String,
+        type: Boolean,
         required: true,
         default: false,
     },
@@ -61,7 +80,7 @@ const orderSchema = mongoose.Schema({
         type: Date
     },
     isDelivered: {
-        type: String,
+        type: Boolean,
         required: true,
         default: false,
     },

@@ -1,8 +1,8 @@
 const products = [{
-    _id: '1',
+
     name: 'Airpods wireless Bluethoot Headphone',
     image: '/images/airpods.jpg',
-    descripation: 'Airpods wireless Bluethoot Headphone',
+    description: 'Airpods wireless Bluethoot Headphone',
     brand: 'Apple',
     category: 'Electronics',
     price: 89.88,
@@ -12,10 +12,10 @@ const products = [{
 
 },
 {
-    _id: '2',
+
     name: 'pepsi',
     image: '/images/pepsi.jpg',
-    descripation: 'Even in the age of next-day delivery, self-checkout, and gigabit internet, some things can not be rushed. ',
+    description: 'Even in the age of next-day delivery, self-checkout, and gigabit internet, some things can not be rushed. ',
     brand: 'PEPSI',
     category: 'Drinks',
     price: 12.88,
@@ -25,10 +25,10 @@ const products = [{
 
 },
 {
-    _id: '3',
+
     name: 'Sony wx350',
     image: '/images/camera.jpg',
-    descripation: 'The best Sony cameras come in all shapes and sizes, from high-speed sports shooters! ',
+    description: 'The best Sony cameras come in all shapes and sizes, from high-speed sports shooters! ',
     brand: 'Sony',
     category: 'Electronics',
     price: 89.88,
@@ -38,10 +38,10 @@ const products = [{
 
 },
 {
-    _id: '4',
+
     name: 'Amazon Sound System',
     image: '/images/amazon.jpg',
-    descripation: 'Go to Settings and turn on Bluetooth. In Bluetooth click “Pair new device',
+    description: 'Go to Settings and turn on Bluetooth. In Bluetooth click “Pair new device',
     brand: 'Amazon',
     category: 'Electronics',
     price: 150.88,
@@ -51,10 +51,10 @@ const products = [{
 
 },
 {
-    _id: '5',
+
     name: 'lamp',
     image: '/images/lamp.jpg',
-    descripation: 'life time longerbity',
+    description: 'life time longerbity',
     brand: 'PHILLIPS',
     category: 'Electronics',
     price: 15.88,
@@ -64,10 +64,10 @@ const products = [{
 
 },
 {
-    _id: '6',
+
     name: 'Watch',
     image: '/images/watch.jpg',
-    descripation: 'Apple Watch...',
+    description: 'Apple Watch...',
     brand: 'watch',
     category: 'Electronics',
     price: 89.88,
@@ -78,4 +78,4 @@ const products = [{
 
 }]
 
-export default products;
+export default products; 

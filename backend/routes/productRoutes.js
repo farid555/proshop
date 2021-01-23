@@ -1,7 +1,8 @@
-import asyncHandler from 'express-async-handle'
 import express from 'express'
-import Product from '../models/productModel.js'
+import asyncHandler from 'express-async-handler'
 const router = express.Router()
+import Product from '../models/productModel.js'
+
 
 
 //@desc    Fatch all products
@@ -19,7 +20,7 @@ router.get('/', asyncHandler(async (req, res) => {
 
 
 
-app.get('/:id', asyncHandler(async (req, res) => {
+router.get('/:id', asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id)
 
     if (product) {
